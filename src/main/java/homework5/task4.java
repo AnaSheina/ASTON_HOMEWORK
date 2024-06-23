@@ -1,4 +1,5 @@
 package homework5;
+
 //Задание 4
 /*
  *Создайте метод compareNumbers(), в теле которого объявите две int переменные a и b, и инициализируйте их любыми
@@ -7,20 +8,8 @@ package homework5;
  */
 public class task4 {
     public static void compareNumbers(){
-        /*
-         * Выводит сообщение в консоль “a >= b”, если объявленная переменная a больше или равно b,
-         * “a < b”, если a меньше b
-         * */
         int a = 9;
         int b = 8;
-        if (a>=b) {
-            System.out.print("a >= b");
-        }
-        else {
-            System.out.print("a < b");
-        }
-    }
-    public static void main(String[] args){
-        compareNumbers();
+        System.out.println((a>=b)?"a >= b":"a >= b");
     }
 }

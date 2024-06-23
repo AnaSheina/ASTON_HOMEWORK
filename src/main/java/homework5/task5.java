@@ -2,22 +2,15 @@ package homework5;
 
 //Задание 5
 /*Напишите метод, принимающий на вход два целых числа и проверяющий, что их сумма лежит в пределах
- от 10 до 20 (включительно), если да – вернуть true, в противном случае – false.
+от 10 до 20 (включительно), если да – вернуть true, в противном случае – false.
 */
 public class task5 {
-    public static void compareSum(int a,int b){
-        /*
-         * Метод возвращает True, если сумма двух чисел лежит в пределах от 10 до 20 (включительно)
-         * и False, если не лежит
-         */
+    public static boolean compareSum(int a,int b){
         if ((a+b>=10) & (a+b<=20)) {
-            System.out.print("True");
+            return true;
         }
         else {
-            System.out.print("False");
-        };
-    }
-    public static void main(String[] args){
-        compareSum(4,7);
+            return false;
+        }
     }
 }

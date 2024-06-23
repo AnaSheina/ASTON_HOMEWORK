@@ -7,10 +7,8 @@ package homework5;
  */
 public class task10 {
 
-    public static void main(String[] args){
-        /*
-         * Метод меняет элементы массива с 1 на 0 и наоборот
-         */
+
+    public static void changeArray(){
         int[] dock={1,0,0,1,0,1};
         for (int i=0;i < dock.length;i++){
             if (dock[i]==1){
@@ -19,9 +17,6 @@ public class task10 {
             else {
                 dock[i]=1;
             }
-        }
-        for (int i=0;i < dock.length;i++) {
-            System.out.print(dock[i]);
         }
     }
 }

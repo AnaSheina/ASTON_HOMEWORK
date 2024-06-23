@@ -1,4 +1,5 @@
 package homework5;
+import java.util.Arrays;
 
 //Задание 14
 /*
@@ -6,17 +7,9 @@ package homework5;
  *  и возвращающий одномерный массив типа int длиной len, каждая ячейка которого равна initialValue
  */
 public class task14 {
-    public static void printArray(int len,int initialValue){
-        /*
-         * Метод создает одномерный массив введенной длины, каждая ячейка которого заполнена введенным значением
-         */
+    public static int[] returnArray(int len,int initialValue){
         int[] dock=new int [len];
-        for (int i=0;i<dock.length;i++){
-            dock[i]=initialValue;
-            System.out.print(dock[i] +" ");
-        }
-    }
-    public static void main(String[] args){
-        printArray(2,3);
+        Arrays.fill(dock,initialValue);
+        return dock;
     }
 }

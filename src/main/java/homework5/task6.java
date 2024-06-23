@@ -7,17 +7,6 @@ package homework5;
  */
 public class task6 {
     public static void printWhatNumber(int value){
-        /*
-         *Метод выводит положительное ли введенное число или отрицательное
-         */
-        if (value >= 0) {
-            System.out.print("Положительное число");
-        }
-        else {
-            System.out.print("Отрицательное число");
-        }
-    }
-    public static void main(String[] args){
-        printWhatNumber(-7);
+        System.out.println((value >= 0)?"Положительное число":"Отрицательное число");
     }
 }

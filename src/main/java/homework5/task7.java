@@ -7,19 +7,12 @@ package homework5;
  * Замечание: ноль считаем положительным числом.
  */
 public class task7 {
-    public static void printWhatNumber(int a){
-        /*
-         * Метод возвращает true, если число отрицательное,
-         * false, если положительное
-         */
+    public static boolean WhatNumber(int a){
         if (a >= 0) {
-            System.out.print("False");
+            return false;
         }
         else {
-            System.out.print("True");
-        };
-    }
-    public static void main(String[] args){
-        printWhatNumber(4);
+            return true;
+        }
     }
 }

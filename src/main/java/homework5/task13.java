@@ -8,10 +8,7 @@ package homework5;
  *  индексы таких элементов равны, то есть [0][0], [1][1], [2][2], ..., [n][n]
  */
 public class task13 {
-    public static void main(String[] args){
-        /*
-         * Метод заполняет диагонали квадратного двумерного массива единицами
-         */
+    public static void diogonalArray(){
         int a=5;//задать размер массива
         int[][] dock= new int [a][a];
         for (int i=0;i < a;i++){
@@ -23,12 +20,6 @@ public class task13 {
                     dock[i][j]=1;
                 }
             }
-        }
-        for (int i=0;i < a;i++){
-            for(int j=0;j<a;j++) {
-                System.out.print(dock[i][j]);
-            }
-            System.out.print("\n");
         }
     }
 }
